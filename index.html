@@ -6,39 +6,41 @@
 
 <title>Saanvi Enterprise | IT Services & Laptop Repair in Delhi</title>
 
-<meta name="description" content="Saanvi Enterprise provides professional IT services, laptop repair, AMC, CCTV, biometric systems and refurbished laptops in Nehru Place, Delhi.">
-<meta name="keywords" content="IT Services Delhi, Laptop Repair Nehru Place, CCTV Installation, Biometric System, AMC Services">
+<meta name="description" content="Saanvi Enterprise provides professional IT services, laptop repair, CCTV, biometric systems and refurbished laptops in Delhi.">
+<meta name="keywords" content="IT Services Delhi, Laptop Repair, CCTV Installation, AMC Services">
 <meta name="author" content="Saanvi Enterprise">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
+:root {
+  --primary: #0B3C5D;
+  --secondary: #1E8E8E;
+  --gold: #D4AF37;
+  --light-bg: #F5F9FC;
+  --dark: #1E293B;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background: #f5f7fa;
-  color: #333;
-  scroll-behavior: smooth;
-}
-
-/* OFFSET FOR FIXED NAVBAR */
-section {
-  scroll-margin-top: 90px;
+  background: var(--light-bg);
+  color: var(--dark);
 }
 
 /* NAVBAR */
 .navbar {
-  background: #0d47a1;
+  background: white;
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -49,41 +51,41 @@ section {
 }
 
 .navbar ul {
-  list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 30px;
+  list-style: none;
 }
 
-.navbar ul li a {
-  color: white;
+.navbar a {
   text-decoration: none;
+  color: var(--primary);
   font-weight: 500;
 }
 
-.navbar ul li a:hover {
-  color: #ffc107;
+.navbar a:hover {
+  color: var(--gold);
 }
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, #0d47a1, #00bfa5);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
-  padding: 100px 20px;
+  padding: 110px 20px;
   text-align: center;
 }
 
-.hero-logo {
-  width: 140px;
+.hero img {
+  width: 150px;
   margin-bottom: 20px;
 }
 
 .hero h1 {
-  font-size: 2.6rem;
+  font-size: 2.7rem;
   margin-bottom: 15px;
 }
 
 .hero p {
-  max-width: 650px;
+  max-width: 700px;
   margin: auto;
   font-size: 1.1rem;
 }
@@ -92,25 +94,26 @@ section {
   margin-top: 30px;
 }
 
-.hero a {
-  padding: 12px 25px;
-  margin: 10px;
+.btn {
+  padding: 12px 28px;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
+  margin: 10px;
+  display: inline-block;
 }
 
 .btn-primary {
-  background: #ffc107;
-  color: #0d47a1;
+  background: var(--gold);
+  color: var(--primary);
 }
 
 .btn-secondary {
-  background: white;
-  color: #0d47a1;
+  border: 2px solid white;
+  color: white;
 }
 
-/* SECTIONS */
+/* SECTION */
 section {
   padding: 80px 20px;
   max-width: 1200px;
@@ -119,36 +122,48 @@ section {
 
 h2 {
   text-align: center;
-  color: #0d47a1;
+  color: var(--primary);
   margin-bottom: 50px;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
-/* CARDS */
+/* SERVICES */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
 }
 
 .card {
   background: white;
   padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-8px) scale(1.02);
+  transform: translateY(-8px);
+  border-top: 4px solid var(--gold);
+}
+
+.card h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact-box {
+  text-align: center;
+  font-size: 1.05rem;
 }
 
 /* FOOTER */
 footer {
-  background: #0d47a1;
+  background: var(--primary);
   color: white;
   text-align: center;
-  padding: 30px;
+  padding: 25px;
 }
 
 /* WHATSAPP */
@@ -156,26 +171,17 @@ footer {
   position: fixed;
   right: 25px;
   bottom: 25px;
+  background: var(--gold);
   width: 60px;
   height: 60px;
-  background: #0d47a1;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-  z-index: 999;
 }
 
 .whatsapp img {
   width: 32px;
-}
-
-/* MOBILE */
-@media(max-width:768px) {
-  .navbar {
-    flex-direction: column;
-  }
 }
 </style>
 </head>
@@ -189,20 +195,21 @@ footer {
   </div>
   <ul>
     <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </div>
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <img src="logo.png" class="hero-logo" alt="Saanvi Enterprise">
-  <h1>Your Trusted IT Solutions Partner</h1>
-  <p>Professional IT support, CCTV, biometric systems & refurbished laptops in Delhi.</p>
+  <img src="logo.png" alt="Saanvi Enterprise">
+  <h1>Reliable IT Solutions for Your Business</h1>
+  <p>Professional IT Services, Laptop Repair, CCTV & Biometric Solutions in Delhi</p>
+
   <div class="btns">
-    <a href="#contact" class="btn-primary">Get Quote</a>
-    <a href="#services" class="btn-secondary">Our Services</a>
+    <a href="#contact" class="btn btn-primary">Get Quote</a>
+    <a href="#services" class="btn btn-secondary">Our Services</a>
   </div>
 </section>
 
@@ -210,7 +217,7 @@ footer {
 <section id="services">
 <h2>Our Services</h2>
 <div class="cards">
- <div class="card"><h3>Hardware Repair</h3><p>Hardware repair involves diagnosing and fixing physical computer components. Laptop motherboards are compact and mostly soldered, making repairs delicate, while desktop motherboards are modular and easier to upgrade. Key components include the CPU, RAM, storage, power connectors, expansion slots, and cooling system. Effective repair requires proper inspection, testing, and thermal management.</p></div>
+  <div class="card"><h3>Hardware Repair</h3><p>Hardware repair involves diagnosing and fixing physical computer components. Laptop motherboards are compact and mostly soldered, making repairs delicate, while desktop motherboards are modular and easier to upgrade. Key components include the CPU, RAM, storage, power connectors, expansion slots, and cooling system. Effective repair requires proper inspection, testing, and thermal management.</p></div>
   <div class="card"><h3>Networking</h3><p>We provide professional networking cabling solutions for offices, homes, and surveillance systems. Our services include installation of LAN ports using Cat5e and Cat6 Ethernet cables, setup of IP cameras with PoE (Power over Ethernet), and telephone connections using RJ11 cables. We ensure proper cable management, secure termination, and adherence to color codes for reliable data transfer and minimal interference. Our solutions are designed for efficiency, scalability, and long-term performance.</p></div>
   <div class="card"><h3>Certified Refurbished Laptops</h3><p>Get high-quality, certified refurbished laptops at great prices! Each laptop is thoroughly tested and comes with a warranty, ensuring reliability and performance you can trust. Ideal for students, professionals, and businesses seeking affordable yet powerful devices.</p></div>
   <div class="card"><h3>AMC Services</h3><p>We provide reliable AMC services for laptops, desktops, CCTV cameras, projectors, network switches, and IT equipment. Our plans include regular maintenance, preventive checks, quick troubleshooting, and priority support to ensure smooth and uninterrupted performance. With our AMC, you get reduced downtime, extended device life, and professional technical support all year round.</p></div>
@@ -225,26 +232,26 @@ footer {
 <section id="about">
 <h2>About Us</h2>
 <p style="text-align:center; max-width:800px; margin:auto;">
-Saanvi Enterprise is a trusted IT service provider in Nehru Place, Delhi offering IT support, AMC, CCTV systems, biometric solutions, and refurbished laptops.
+Saanvi Enterprise is a trusted IT solutions provider in Nehru Place, Delhi offering professional IT support, security systems and refurbished laptops.
 </p>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
 <h2>Contact Us</h2>
-<p style="text-align:center;">
-📍 Ashok Bhavan B2/2, Near Modi Tower, Nehru Place, New Delhi – 110019<br>
-📞 +91 7985962317<br>
+<p class="contact-box">
+Ashok Bhavan B2/2 building no-93 Near By Modi Tower Nehru place New Delhi Pin code -110019 <br>
+📞 +91 7985962317 <br>
 ✉ support@saanvienterprise.com
 </p>
 </section>
 
 <footer>
-<p>© 2026 Saanvi Enterprise Pvt Ltd. All Rights Reserved.</p>
+<p>© 2026 Saanvi Enterprise. All Rights Reserved.</p>
 </footer>
 
 <a href="https://wa.me/917985962317" class="whatsapp" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
 </a>
 
 </body>
