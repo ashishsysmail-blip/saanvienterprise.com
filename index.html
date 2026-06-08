@@ -1,261 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Saanvi Enterprise | IT Services, Laptop Repair & CCTV in Delhi</title>
-
-<meta name="description" content="Saanvi Enterprise offers professional IT services, laptop repair, CCTV installation, AMC & networking solutions in Delhi NCR. Call now for instant support.">
-<meta name="keywords" content="Laptop Repair Delhi, IT Services, CCTV Installation, AMC Services, Networking, Refurbished Laptop">
-<meta name="robots" content="index, follow">
+<title>Laptop Repair, CCTV Installation & IT Services in Nehru Place Delhi | Saanvi Enterprise</title>
+<meta name="description" content="Saanvi Enterprise provides laptop repair, desktop repair, CCTV installation, networking, AMC support, data recovery and refurbished laptops in Nehru Place, Delhi NCR. Call +91 7985962317.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Saanvi Enterprise">
 <meta name="geo.region" content="IN-DL">
-<meta name="geo.placename" content="New Delhi">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-/* --- SAME CSS AS YOU SENT (UNCHANGED) --- */
-:root {
-  --blue: #0b3c5d;
-  --gold: #d4af37;
-  --green: #3aa76d;
-  --dark: #1e293b;
-  --light: #f7fafc;
-}
-
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
-html { scroll-behavior: smooth; }
-body { background: var(--light); color: var(--dark); }
-
-header {
-  position: sticky;
-  top: 0;
-  background: #fff;
-  padding: 15px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  z-index: 999;
-}
-
-header img { height: 55px; }
-
-nav ul { list-style: none; display: flex; gap: 30px; }
-nav a { text-decoration: none; font-weight: 500; color: var(--blue); }
-nav a:hover { color: var(--gold); }
-
-.menu { display: none; font-size: 26px; }
-
-.hero {
-  background: linear-gradient(135deg, #0b3c5d, #1e8e8e);
-  color: white;
-  text-align: center;
-  padding: 120px 20px;
-}
-
-.hero img { width: 150px; margin-bottom: 20px; }
-.hero h1 { font-size: 2.8rem; }
-.hero p { max-width: 700px; margin: 15px auto; font-size: 1.1rem; }
-
-.cta { margin-top: 30px; }
-
-.btn {
-  padding: 14px 32px;
-  border-radius: 40px;
-  font-weight: 600;
-  text-decoration: none;
-  margin: 8px;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.btn-primary {
-  background: linear-gradient(45deg, #d4af37, #ffe58f);
-  color: #000;
-}
-
-.btn-secondary {
-  border: 2px solid #fff;
-  color: white;
-}
-
-.btn:hover { transform: scale(1.08); }
-
-section {
-  padding: 90px 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-h2 {
-  text-align: center;
-  font-size: 2.3rem;
-  margin-bottom: 50px;
-  color: var(--blue);
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-.card {
-  background: white;
-  padding: 30px;
-  border-radius: 18px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  transition: 0.3s;
-  border-top: 4px solid var(--gold);
-}
-
-.card:hover { transform: translateY(-10px); }
-
-.trust-section {
-  background: linear-gradient(135deg, #0b3c5d, #0f2a3d);
-  color: white;
-  padding: 90px 20px;
-}
-
-.trust-section h2 { color: white; }
-
-.trust-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.trust-box {
-  background: rgba(255,255,255,0.08);
-  padding: 30px;
-  border-radius: 20px;
-  text-align: center;
-}
-
-footer {
-  background: var(--blue);
-  color: white;
-  text-align: center;
-  padding: 25px;
-}
-
-.whatsapp {
-  position: fixed;
-  right: 25px;
-  bottom: 25px;
-  background: #25d366;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.whatsapp img { width: 32px; }
-
-@media(max-width:768px) {
-  nav ul { display: none; flex-direction: column; background: white; position: absolute; right: 20px; top: 70px; padding: 20px; border-radius: 10px; }
-  nav ul.active { display: flex; }
-  .menu { display: block; }
-  .hero h1 { font-size: 2rem; }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-  <img src="logo.png" alt="Saanvi Enterprise">
-  <div class="menu" onclick="toggleMenu()">☰</div>
-  <nav>
-    <ul id="nav">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#accessories">Accessories</a></li>
-      <li><a href="#trust">Why Us</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<!-- HERO -->
-<section class="hero" id="home">
-  <img src="logo.png">
-  <h1>Trusted IT Solutions for Growing Businesses</h1>
-  <p>Professional IT Services, Laptop Repair, CCTV, Networking & AMC Support</p>
-  <div class="cta">
-    <a href="https://wa.me/917985962317" class="btn btn-primary">WhatsApp Now</a>
-    <a href="#services" class="btn btn-secondary">Explore Services</a>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services">
-<h2>Our Services</h2>
-<div class="cards">
-  <div class="card"><h3>Hardware Repair</h3><p>Professional motherboard & component-level repair.</p></div>
-  <div class="card"><h3>Networking</h3><p>LAN, CCTV cabling, switches & structured networking.</p></div>
-  <div class="card"><h3>Certified Refurbished Laptops</h3><p>Quality-tested laptops with warranty.</p></div>
-  <div class="card"><h3>AMC Services</h3><p>Annual maintenance & priority IT support.</p></div>
-  <div class="card"><h3>Data Recovery</h3><p>Secure recovery from HDD, SSD & storage devices.</p></div>
-  <div class="card"><h3>CCTV Installation</h3><p>HD & IP surveillance systems with remote access.</p></div>
-</div>
-</section>
-
-<!-- ACCESSORIES SECTION (NEW) -->
-<section id="accessories">
-<h2>Computer & CCTV Accessories</h2>
-<div class="cards">
-  <div class="card"><h3>Laptop Chargers & Batteries</h3><p>Original & compatible chargers and batteries for all brands.</p></div>
-  <div class="card"><h3>Keyboards & Mouse</h3><p>Wired, wireless & gaming accessories.</p></div>
-  <div class="card"><h3>Routers & Network Devices</h3><p>High-speed routers, switches & connectors.</p></div>
-  <div class="card"><h3>CCTV Accessories</h3><p>Cables, DVR/NVR, adapters & power supplies.</p></div>
-  <div class="card"><h3>Storage Devices</h3><p>SSD, HDD, Pen Drives & Memory Cards.</p></div>
-  <div class="card"><h3>Computer Peripherals</h3><p>Monitors, webcams, speakers & accessories.</p></div>
-</div>
-</section>
-
-<!-- TRUST -->
-<section class="trust-section" id="trust">
-  <h2>Why Choose Saanvi Enterprise?</h2>
-  <div class="trust-grid">
-    <div class="trust-box">✔ Certified Professionals</div>
-    <div class="trust-box">✔ Quick Turnaround Time</div>
-    <div class="trust-box">✔ Affordable Pricing</div>
-    <div class="trust-box">✔ Trusted by 1000+ Clients</div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <h2>Contact Us</h2>
-  <p>
-    Ashok Bhavan B2/2, Nehru Place, New Delhi – 110019<br>
-    📞 +91 7985962317  📞 +91 8510957737<br>
-    ✉ info@saanvienterprise.com   ✉support@saanvienterprise.com
-  </p>
-</section>
-
-<footer>
-  © 2026 Saanvi Enterprise. All Rights Reserved.
-</footer>
-
-<a href="https://wa.me/917985962317" class="whatsapp">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-</a>
-
-<script>
-function toggleMenu() {
-  document.getElementById("nav").classList.toggle("active");
+<meta name="geo.placename" content="Nehru Place, New Delhi">
+<meta name="geo.position" content="28.5494;77.2525">
+<meta name="ICBM" content="28.5494, 77.2525">
+<link rel="canonical" href="https://www.saanvienterprise.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Saanvi Enterprise | Laptop Repair, CCTV & IT Services in Delhi">
+<meta property="og:description" content="Fast laptop repair, CCTV installation, networking and AMC support from Nehru Place, Delhi NCR.">
+<meta property="og:url" content="https://www.saanvienterprise.com/">
+<meta property="og:image" content="https://www.saanvienterprise.com/logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "ComputerRepairService"],
+  "@id": "https://www.saanvienterprise.com/#business",
+  "name": "Saanvi Enterprise",
+  "url": "https://www.saanvienterprise.com/",
+  "logo": "https://www.saanvienterprise.com/logo.png",
+  "image": "https://www.saanvienterprise.com/logo.png",
+  "description": "Laptop repair, desktop repair, CCTV installation, networking, AMC support, data recovery and refurbished laptop services in Delhi NCR.",
+  "telephone": "+91-7985962317",
+  "email": "info@saanvienterprise.com",
+  "priceRange": "INR",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ashok Bhavan B2/2, Nehru Place",
+    "addressLocality": "New Delhi",
+    "addressRegion": "Delhi",
+    "postalCode": "110019",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 28.5494,
+    "longitude": 77.2525
+  },
+  "areaServed": [
+    "Nehru Place",
+    "New Delhi",
+    "Delhi NCR",
+    "Noida",
+    "Gurugram",
+    "Faridabad",
+    "Ghaziabad"
+  ],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "opens": "10:00",
+    "closes": "19:30"
+  }],
+  "sameAs": [
+    "https://wa.me/917985962317"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "IT Services and Computer Repair",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Laptop Repair in Delhi"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "CCTV Installation in Delhi NCR"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Computer AMC Support"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Networking and LAN Cabling"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Data Recovery"}}
+    ]
+  }
 }
 </script>
-
-</body>
-</html>
-
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you provide laptop repair in Nehru Place, Delhi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Saanvi Enterprise provides laptop and desktop repair from Nehru Place, New Delhi, including motherboard repair, display replacement, SSD and RAM upgrades, Windows installation and virus removal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you install CCTV cameras for offices and shops?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We install HD and IP CCTV systems with DVR or NVR setup, cabling, power supply, storage configuration and remote mobile viewing."
+      }
