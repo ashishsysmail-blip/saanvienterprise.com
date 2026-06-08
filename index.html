@@ -11,12 +11,12 @@
 <meta name="geo.placename" content="Nehru Place, New Delhi">
 <meta name="geo.position" content="28.5494;77.2525">
 <meta name="ICBM" content="28.5494, 77.2525">
-<link rel="canonical" href="https://www.saanvienterprise.com/">
+<link rel="canonical" href="https://saanvienterprise.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Saanvi Enterprise | Laptop Repair, CCTV & IT Services in Delhi">
 <meta property="og:description" content="Fast laptop repair, CCTV installation, networking and AMC support from Nehru Place, Delhi NCR.">
-<meta property="og:url" content="https://www.saanvienterprise.com/">
-<meta property="og:image" content="https://www.saanvienterprise.com/logo.png">
+<meta property="og:url" content="https://saanvienterprise.com/">
+<meta property="og:image" content="https://saanvienterprise.com/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,11 +25,11 @@
 {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness", "ComputerRepairService"],
-  "@id": "https://www.saanvienterprise.com/#business",
+  "@id": "https://saanvienterprise.com/#business",
   "name": "Saanvi Enterprise",
-  "url": "https://www.saanvienterprise.com/",
-  "logo": "https://www.saanvienterprise.com/logo.png",
-  "image": "https://www.saanvienterprise.com/logo.png",
+  "url": "https://saanvienterprise.com/",
+  "logo": "https://saanvienterprise.com/logo.png",
+  "image": "https://saanvienterprise.com/logo.png",
   "description": "Laptop repair, desktop repair, CCTV installation, networking, AMC support, data recovery and refurbished laptop services in Delhi NCR.",
   "telephone": "+91-7985962317",
   "email": "info@saanvienterprise.com",
@@ -208,7 +208,7 @@ header {
 nav ul {
   align-items: center;
   display: flex;
-  gap: 22px;
+  gap: 18px;
   list-style: none;
 }
 
@@ -237,13 +237,26 @@ nav a:focus {
   width: 44px;
 }
 
+.nav-call {
+  background: var(--blue);
+  border-radius: 6px;
+  color: #fff;
+  padding: 10px 14px;
+}
+
+.nav-call:hover,
+.nav-call:focus {
+  background: var(--gold);
+  color: #111;
+}
+
 .hero {
   background:
     radial-gradient(circle at 88% 12%, rgba(212, 175, 55, 0.28), transparent 28%),
     linear-gradient(115deg, rgba(8, 43, 67, 0.98), rgba(11, 60, 93, 0.82)),
     url("logo.png") center right 8% / 300px no-repeat;
   color: #fff;
-  padding: 78px 24px 74px;
+  padding: 66px 24px 68px;
 }
 
 .hero-inner,
@@ -267,10 +280,10 @@ nav a:focus {
 }
 
 h1 {
-  font-size: clamp(2.15rem, 4.4vw, 4.55rem);
-  line-height: 1.08;
+  font-size: clamp(2rem, 3.8vw, 3.95rem);
+  line-height: 1.1;
   margin: 14px 0 18px;
-  max-width: 920px;
+  max-width: 860px;
 }
 
 .hero p {
@@ -336,12 +349,12 @@ h1 {
   border-radius: 8px;
   box-shadow: 0 26px 60px rgba(2, 16, 30, 0.26);
   color: var(--ink);
-  padding: 26px;
+  padding: 24px;
 }
 
 .quick-card img {
-  height: 78px;
-  margin-bottom: 18px;
+  height: 66px;
+  margin-bottom: 14px;
   object-fit: contain;
   width: 78px;
 }
@@ -361,7 +374,7 @@ h1 {
   display: grid;
   gap: 11px;
   list-style: none;
-  margin: 20px 0;
+  margin: 18px 0;
 }
 
 .quick-list li {
@@ -433,6 +446,8 @@ h2 {
 }
 
 .card,
+.offer-card,
+.review-card,
 .contact-panel,
 .faq details {
   background: var(--paper);
@@ -462,6 +477,34 @@ h2 {
   margin-bottom: 14px;
   padding: 5px 10px;
   text-transform: uppercase;
+}
+
+.offers {
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f7fafc 100%);
+  border-top: 1px solid var(--line);
+}
+
+.offer-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.offer-card {
+  padding: 22px;
+}
+
+.offer-card strong {
+  color: var(--blue);
+  display: block;
+  font-size: 1.08rem;
+  margin-bottom: 6px;
+}
+
+.offer-card span {
+  color: var(--muted);
+  display: block;
 }
 
 .card h3 {
@@ -516,6 +559,63 @@ h2 {
   background: #fff;
   border-bottom: 1px solid var(--line);
   border-top: 1px solid var(--line);
+}
+
+.reviews {
+  background: #fff;
+}
+
+.review-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.review-card {
+  padding: 24px;
+}
+
+.stars {
+  color: #b88400;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+}
+
+.review-card p {
+  color: var(--muted);
+}
+
+.review-card strong {
+  color: var(--blue-strong);
+  display: block;
+  margin-top: 14px;
+}
+
+.review-meta {
+  color: var(--muted);
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.review-cta {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  margin-top: 26px;
+}
+
+.review-cta p {
+  color: var(--muted);
+  max-width: 640px;
+}
+
+.review-cta .btn-secondary {
+  border-color: var(--blue);
+  color: var(--blue);
 }
 
 .steps {
@@ -678,6 +778,11 @@ footer {
     top: 78px;
   }
 
+  .nav-call {
+    text-align: center;
+    width: 100%;
+  }
+
   nav ul.active {
     display: flex;
   }
@@ -690,6 +795,8 @@ footer {
   .hero-grid,
   .trust-list,
   .cards,
+  .offer-grid,
+  .review-grid,
   .two-col,
   .steps {
     grid-template-columns: 1fr;
@@ -739,9 +846,11 @@ footer {
     <ul id="nav">
       <li><a href="#services">Services</a></li>
       <li><a href="#process">Process</a></li>
+      <li><a href="#offers">Offers</a></li>
       <li><a href="#areas">Service Areas</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a class="nav-call" href="tel:+917985962317">Call Now</a></li>
     </ul>
   </nav>
 </header>
@@ -874,6 +983,31 @@ footer {
     </div>
   </section>
 
+  <section class="offers" id="offers">
+    <div class="section-inner">
+      <h2>Popular Service Requests</h2>
+      <p class="section-lead">Quick options for customers who already know what they need. Final pricing depends on device condition, parts and site requirements.</p>
+      <div class="offer-grid">
+        <article class="offer-card">
+          <strong>SSD & RAM Upgrade</strong>
+          <span>Speed up slow laptops and desktops with storage and memory upgrades.</span>
+        </article>
+        <article class="offer-card">
+          <strong>Laptop Diagnosis</strong>
+          <span>Check power, display, charging, heating and performance issues.</span>
+        </article>
+        <article class="offer-card">
+          <strong>CCTV Setup</strong>
+          <span>Camera installation, DVR/NVR setup and remote mobile viewing.</span>
+        </article>
+        <article class="offer-card">
+          <strong>Office AMC Plans</strong>
+          <span>Regular IT maintenance for offices, shops and small businesses.</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section class="location-band" id="areas">
     <div class="section-inner">
       <h2>Service Areas Near Delhi NCR</h2>
@@ -890,6 +1024,55 @@ footer {
         <li>Faridabad</li>
         <li>Ghaziabad</li>
       </ul>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="section-inner">
+      <h2>Customer Reviews on Google</h2>
+      <p class="section-lead">Recent customers mention laptop repair, refurbished laptops, affordable service and helpful staff at Saanvi Enterprise.</p>
+      <div class="review-grid">
+        <article class="review-card">
+          <div class="stars" aria-label="5 star review">★★★★★</div>
+          <p>Good Job... Nice staff</p>
+          <strong>Gourav Sharma</strong>
+          <span class="review-meta">May 28, 2026</span>
+        </article>
+        <article class="review-card">
+          <div class="stars" aria-label="5 star review">★★★★★</div>
+          <p>Good service at reasonable rates.</p>
+          <strong>new Indianetwork</strong>
+          <span class="review-meta">May 14, 2026</span>
+        </article>
+        <article class="review-card">
+          <div class="stars" aria-label="5 star review">★★★★★</div>
+          <p>Good services at affordable price.</p>
+          <strong>Bipin Bisht</strong>
+          <span class="review-meta">May 14, 2026</span>
+        </article>
+        <article class="review-card">
+          <div class="stars" aria-label="5 star review">★★★★★</div>
+          <p>Having a great experience</p>
+          <strong>Modi ji</strong>
+          <span class="review-meta">May 9, 2026</span>
+        </article>
+        <article class="review-card">
+          <div class="stars" aria-label="5 star review">★★★★★</div>
+          <p>Best experience. Best laptop repairing setup. My laptop screen damage was replaced. Thank you.</p>
+          <strong>Bichitra Majhi</strong>
+          <span class="review-meta">Apr 29, 2026</span>
+        </article>
+        <article class="review-card">
+          <div class="stars" aria-label="5 star review">★★★★★</div>
+          <p>Best service with lowest price</p>
+          <strong>Himanshu Kumar</strong>
+          <span class="review-meta">Mar 28, 2026</span>
+        </article>
+      </div>
+      <div class="review-cta">
+        <p>See more recent customer feedback directly on Google Maps before visiting or calling.</p>
+        <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Saanvi%20Enterprise%20Nehru%20Place%20New%20Delhi">View on Google Maps</a>
+      </div>
     </div>
   </section>
 
